@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
 
-//Identification du user
+//authentification du user
 const user = {
     id: 42,
     name: 'inconnu',
@@ -29,7 +29,7 @@ function generateRefreshToken(user) {
 }
   
 
-//Requete post pour verifier l'identification
+//Requete post pour generer l'identification
 app.post('/api/login', (req, res) => {
 
     
@@ -50,7 +50,7 @@ app.post('/api/login', (req, res) => {
     });
 });
 
-//Requete post pour verifier le refresh token
+//Requete post pour generer le refresh token
 app.post('/api/refreshToken', (req, res) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
@@ -73,7 +73,7 @@ app.post('/api/refreshToken', (req, res) => {
 });
 
 
-//Verification l'identification token
+//Generer l'authentification token
 function authenticateToken(req, res, next) {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
