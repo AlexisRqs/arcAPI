@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name":"Axel",
+        "type": "Homme",
+        "Message": "Welcome",
+        "Serveur": "serveur1"
+    },
+    {
+        "id": 2,
+        "name":"Alexis",
+        "type": "Homme",
+        "Message": "ahaa",
+        "Serveur": "serveur1"
+    },
+    {
+        "id": 3,
+        "name":"pseudoano1",
+        "type": "Homme",
+        "Message": "good",
+        "Serveur": "serveur1"
+    },
+    {
+        "id": 4,
+        "name":"pseudoano2",
+        "type": "Femme",
+        "Message": "hello",
+        "Serveur": "serveur1"
+    },
+    {
+        "id": 5,
+        "name":"pseudoano2",
+        "type": "Femme",
+        "Message": "bonjour",
+        "Serveur": "serveur1"
+    }
+]
